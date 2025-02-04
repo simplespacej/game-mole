@@ -15,7 +15,8 @@ artifacts:
     name: build
 
 deploy_script:
+  - echo "GitHub Token: $GITHUB_TOKEN"
   - git config --global user.email "my-programming@mail.ru"
   - git config --global user.name "simplespacej"
-  - git remote set-url origin https://$(GITHUB_TOKEN)@github.com/simplespacej/game-mole.git
+  - git remote set-url origin https://$GITHUB_TOKEN@github.com/simplespacej/game-mole.git
   - npm run deploy
