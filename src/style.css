@@ -4,6 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f4f4f4;
+    cursor: url('hammer.png') 16 16, auto;
   }
   
   .game-board {
@@ -27,5 +28,6 @@ body {
   .character {
     width: 80px;
     height: 80px;
+    cursor: pointer;
   }
   
